@@ -3,7 +3,7 @@ name: Daily Discord Update
 on:
   schedule:
     # This runs at 12:00 UTC every day
-    - cron: '0 12 * * *'
+    - cron: '30 23 * * *'
   workflow_dispatch: # Allows you to run it manually for testing
 
 jobs:
