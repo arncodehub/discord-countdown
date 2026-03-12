@@ -18,7 +18,7 @@ def send_webhook(content):
 
 def calculate_countdown():
     # Set your target date here (Year, Month, Day, Hour, Minute)
-    target_date = datetime(2025, 12, 31, 0, 0) 
+    target_date = datetime(2026, 6, 2, 0, 0) 
     now = datetime.now()
     
     diff = target_date - now
