@@ -22,14 +22,15 @@ def calculate_countdown():
     now = datetime.now()
     
     diff = target_date - now
+    days = diff.days + 1
     
-    if diff.days < 0:
+    if days < 0:
         return "School has ended!"
 
-    if diff.days == 0:
+    if days == 0:
         return "School ends today!"
       
-    return f"{diff.days} days until school ends!"
+    return f"{days} days until school ends!"
 
 if __name__ == "__main__":
     message = calculate_countdown()
