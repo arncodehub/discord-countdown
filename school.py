@@ -8,7 +8,7 @@ def send_webhook(content):
         print("Error: DISCORD_WEBHOOK_URL not found in environment variables.")
         return
 
-    data = {"content": content}
+    data = {"content": content, "flags": 4096}
     response = requests.post(url, json=data)
     
     if response.status_code == 204:
